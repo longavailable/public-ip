@@ -7,7 +7,7 @@ on:
       - ip.txt
 
 jobs: 
-  daily-average:
+  update:
     runs-on: ubuntu-latest
     steps:
 
