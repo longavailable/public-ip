@@ -1,4 +1,4 @@
-git fetch origin
+git pull
 
 curl -s myip.ipip.net -o ip.txt && sed -i -e 's/[^0-9.]//g' ip.txt
 
