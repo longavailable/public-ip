@@ -27,5 +27,6 @@ jobs:
         uses: longavailable/simple-push-action@main
         with:
           repository: longavailable/longavailable.github.io
+          token: ${{ secrets.PUBLICIP_TOKEN }}
           path: site
           message: "Update public-ip from Action `date`"
