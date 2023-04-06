@@ -1,4 +1,4 @@
-git pull
+git pull --rebase
 
 curl -s myip.ipip.net -o ip.txt && sed -i -e 's/[^0-9.]//g' ip.txt
 
