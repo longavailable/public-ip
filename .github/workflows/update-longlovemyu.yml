@@ -22,7 +22,7 @@ jobs:
           path: site
       
       - name: update page
-        run: sed -i -r 's/(\b[0-9]{1,3}\.){3}[0-9]{1,3}\b'/"$(cat ip.txt)"/ site/myCollections/_separate-pages/homeassistant.md
+        run: sed -i -r 's/(\b[0-9]{1,3}\.){3}[0-9]{1,3}\b'/"$(cat ip.txt)"/ ${{ vars.HOMEASSISTANT_MD_PATH }}
 
       - name: commit and push site repo
         uses: longavailable/simple-push-action@longavailable
